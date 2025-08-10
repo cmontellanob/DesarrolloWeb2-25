@@ -1,0 +1,19 @@
+h1 {
+    color:orange;
+}
+body {
+    background-color: yellow;
+}
+.borde {
+    border : 1px dotted rgb(237, 23, 215);
+    padding :10px 5px 3px 20px;
+    margin-bottom: 30px;
+}
+#azul {
+    color: blue;
+    background-color: lightblue;
+    padding-top: 10px;
+    padding-left:20px;
+    padding-right: 5px;
+    text-align: justify;
+}

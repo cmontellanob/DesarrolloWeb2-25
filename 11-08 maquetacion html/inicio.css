@@ -5,15 +5,15 @@
     margin: 0 auto;
 }
 
-#izquierda{
+.izquierda{
     width: 20%;
     background-color: #404040;
 }
-#izquierda img{
+.izquierda img{
     width: 50%;
     height: auto;
 }   
-#izquierda hr{
+.izquierda hr{
     border: 1px solid #C60000;
     margin: 20px 0;
 }

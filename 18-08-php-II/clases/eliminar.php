@@ -1,9 +1,8 @@
 <?php include("pila.php");
 
-$elemento = $_GET["elemento"];
 $p = new Pila();
-$p->insertar($elemento);
+$elemento=$p->eliminar();
 
 ?>
-<h1>Elemento insertado</h1>
+<h1>Elemento Eliminado</h1>
 <meta http-equiv="refresh" content="3;url=menu.html">

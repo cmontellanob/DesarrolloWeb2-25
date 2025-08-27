@@ -15,7 +15,7 @@ class Pila {
     }
     function Eliminar() {
         if($this ->tope >0){
-            $valor=$this->elementos[$this->tope;]
+            $valor=$this->elementos[$this->tope];
             $this ->tope--;
             return $valor;
         }

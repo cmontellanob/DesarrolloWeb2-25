@@ -1,0 +1,4 @@
+Realizar un programa en php que solicite n
+luego debe pedir al usuario que introduzca los n valores
+por formulario y el boton sumar
+entonces el programa mostrara el resultado de la suma.

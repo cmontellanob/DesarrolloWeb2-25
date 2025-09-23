@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Coche {
+            marca;
+            modelo="";
+            color;
+            constructor(marca,modelo,color) {
+                this.marca=marca;
+                this.modelo=modelo;
+                this.color=color;
+
+            }
+            MostrarCoche(){
+            document.writeln(this.modelo);    
+                
+            }
+        }
+        var coche1=new Coche("Seat","Toledo","rojo");
+        coche1.MostrarCoche();
+        
+    </script>
+    
+</body>
+</html>

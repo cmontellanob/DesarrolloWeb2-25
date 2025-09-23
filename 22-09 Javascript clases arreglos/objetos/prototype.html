@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Coche(marca, modelo, color) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
+        
+      }
+      Coche.prototype.MostrarCoche=function () {
+        document.writeln(this.modelo);
+      }
+        coche1 = new Coche("Seat", "Toledo", "rojo");
+        coche1.MostrarCoche();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="numero">ingrese un numero</label>
+    <input type="number" id="numero">
+    <button id="boton">Crear</button>
+    <div id="sumandos"></div>
+    <div id="resultado"></div>
+<script>
+    document.getElementById('boton').addEventListener("click",
+        function(){
+            let numero= document.getElementById("numero").value
+            let sumandos=document.getElementById("sumandos");
+            for(i=0;i<numero;i++){
+                let sumando=document.createElement("input")
+                sumando.className="sumando"
+                sumandos.appendChild(sumando)
+            }
+            var br=document.createElement("br")
+            sumandos.appendChild(br)
+            boton=document.createElement("button")
+            boton.innerHTML="calcular"
+            boton.addEventListener("click", function(){
+                sumar = document.querySelectorAll(".sumando");
+                var sumatotal=0;
+                sumar.forEach(elemento => {
+                  sumatotal+=parseInt(elemento.value)
+                });
+                document.getElementById("resultado").innerHTML=sumatotal
+
+
+            }
+            
+        )
+        sumandos.appendChild(boton)
+        }
+    )
+    
+
+</script>
+</body>
+</html>

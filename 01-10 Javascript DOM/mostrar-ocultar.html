@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam similique, voluptatem, deserunt veniam doloremque at nemo nulla nihil tenetur voluptates suscipit nesciunt? Recusandae, esse ea provident distinctio vero similique.</p>
+    <p>Minus voluptatum hic nemo nesciunt nobis corrupti, sequi ipsa, dignissimos odio tenetur voluptatem dicta voluptate numquam molestiae et commodi ullam dolores rem! Nobis veniam ad ratione architecto itaque quo quasi.</p>
+    <p>Minima asperiores, reiciendis in eum temporibus ducimus reprehenderit incidunt sapiente commodi a? Ipsam eos tenetur culpa nesciunt nostrum laboriosam distinctio? Omnis, minus nemo molestias expedita ipsa similique. Fugit, reiciendis sapiente?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui nisi nostrum in facilis, repellendus soluta corporis ullam veniam minima animi numquam amet. Labore fugit eum mollitia atque! Eius, ad quaerat.</p>
+    <p>Delectus expedita nostrum ab eaque. Inventore dolor eius magnam a officia placeat autem repellendus obcaecati aspernatur consequuntur, quasi optio odio natus quo adipisci necessitatibus delectus amet. Dignissimos temporibus quidem repellendus.</p>
+    <p>Veniam commodi ea tempora enim. Cupiditate praesentium corrupti laboriosam, inventore rerum exercitationem placeat consectetur nulla iure vel natus nobis necessitatibus perferendis tempore blanditiis tenetur non iusto, in nostrum at ex.</p>
+    <p>Necessitatibus hic accusantium animi facere aliquid modi ipsam, dicta eligendi a provident at iure nemo sit ab illum repellat laudantium, est odit eum optio perferendis nesciunt. At amet provident facere?</p>
+    <p>Aut est fugiat inventore aliquid iste enim tenetur ipsum omnis, laborum ipsa esse, ducimus repudiandae, architecto magnam quos rerum nam ipsam repellendus! Assumenda incidunt eligendi quia earum, tempore iste voluptatibus.</p>
+    <p>Id impedit porro ratione consectetur voluptates, unde aliquid atque ullam culpa temporibus dolor explicabo nisi aut possimus? Odit enim cupiditate aspernatur sint id assumenda quidem, beatae odio. Vero, illum animi.</p>
+    <button onclick="MostrarOcultar()">Mostrar/Ocultar</button>
+    <button onclick="Pintar()">Pintar</button>
+    <script>
+        function MostrarOcultar()
+        {
+            var  parrafos=document.getElementsByTagName('p');
+            for (i=0;i<parrafos.length;i++)
+            {
+                console.log(parrafos[i].style.visibility);
+                if (parrafos[i].style.visibility=='visible')
+                    {
+                        parrafos[i].style.visibility='hidden'
+                    }
+                    else
+                    {
+                        parrafos[i].style.visibility='visible'
+                    }
+
+            }
+        }
+        function Pintar()
+        {
+            var cont=0;
+            var  parrafos=document.getElementsByTagName('p');
+            for (i=0;i<parrafos.length;i++)
+            {
+                cont++;
+                if(cont==1)
+                {
+                    parrafos[i].style.backgroundColor="red";
+                    
+                }
+                if(cont==2)
+                {
+                    parrafos[i].style.backgroundColor="yellow";
+                }
+                if(cont==3)
+                {
+                    parrafos[i].style.backgroundColor="green";
+                }
+                if(cont==3){
+                    cont=0;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

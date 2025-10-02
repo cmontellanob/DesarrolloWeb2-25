@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" language="javascript">
+      function changeSrc() {
+        if (document.getElementById("myImage").src == 'http://127.0.0.1:5500/01-10%20Javascript%20DOM/images/logo.png') {
+          document.getElementById("myImage").src = "images/logo2.png";
+        } else {
+          document.getElementById("myImage").src = "images/logo.png";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <img id="myImage" src="images/logo.png" />
+    <br /><br />
+    <input type="button" onclick="changeSrc()" value="cambiar imagen" />
+  </body>
+</html>

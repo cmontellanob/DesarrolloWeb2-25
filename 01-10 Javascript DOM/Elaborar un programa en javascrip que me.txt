@@ -1,0 +1,7 @@
+Elaborar un programa en javascrip que mediante un input solicite
+un numero y muestre un boton
+al presionar el boton
+debe crear n inputs para hacer una suma
+y un boton que dice sumar
+luego cuando se presione en este boton mostrar en un div
+de color de fondo amarillo y borde rojo , el resultado

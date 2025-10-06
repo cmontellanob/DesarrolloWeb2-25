@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border: 1px solid  #F79646;padding: 10px; width: 300px;margin: auto;">
+        <form action="tabla.php" method="post">
+            <label for="operacion"></label>
+            <select name="operacion"  style="border: 1px solid  #F79646;">
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multiplicacion">Multiplicacion</option>
+                <option value="division">Division</option>
+            </select>
+            <label for="n">n</label>
+            <input type="number" name="n" id="n" style="border: 1px solid  #F79646;">
+            <br>
+            <input type="submit" value="generar" style="border: 1px solid  #F79646;background-color: #F79646;margin-top: 10px; ">
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -72,7 +72,7 @@
     <div id="siteInfo"><a href="mailto:tan@poderjudicial.gov.bo">Escribanos aqui para cualquier consulta</a> | &copy;2009 Dpto Informatica Tribunal Agrario Nacional: tan@poderjudicial.gov.bo </div>
 
   </div>
-
+  
 </body>
 
 </html>

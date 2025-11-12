@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="cargarDepartamentos()">
+    <form action="" method="post">
+        
+        <div>
+             <label for="nombres">Nombres</label>
+            <input type="text" name="nombres" id="nombres">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos"><br><br>
+             <label for="Fechanacimiento">Fecha nacimiento</label>
+            <input type="date" name="Fecha_nacimiento" id="Fecha_nacimiento"><br><br>
+             <label for="nro_carnet">Nro carnet</label>
+            <input type="text" name="nro_carnet" id="nro_carnet">
+
+
+        </div>
+        <div>
+            <label for="departamentos">Departamento</label>
+            <select name="departamentos" id="departamentos" onchange="cargarProvincias()">
+                <option value="">seleccionar</option>
+           
+            </select>
+        </div>
+        <div>
+            <label for="provincia">Provincia</label>
+            <select name="provincia" id="provincia" onchange="cargarMunicipios()">
+                <option value="">seleccionar</option>
+           
+            </select>
+        </div>
+        <div>
+           <label for="municipio_nacimiento_id">municipio</label>
+            <select name="municipio_nacimiento_id" id="municipio_nacimiento_id" >
+        <option value="">seleccionar</option>
+           
+            </select> 
+        </div>
+        <div>
+            <input type="submit" value="Registrar">
+        </div>
+
+
+
+
+    </form>
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>2do Parcial - 1</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    
+      
+    </style>
+
+    <script src="examen.js"></script>
+</head>
+<body>
+
+<header>
+    Segundo Parcial 1 SIS 256 - Tecnologia y Desarrollo Web
+</header>
+
+<div id="info">
+    Estudiante: ........................ &nbsp;&nbsp;|&nbsp;&nbsp; CU: .......................
+</div>
+
+<div id="contenedor">
+
+    <div id="menu">
+       
+    <button class="btnMenu" id="btn1" onclick="javascript:cargarContenido('galeria.php')" >Pregunta 1 </button>
+    <button class="btnMenu" id="btn2" onclick="javascript:cargarContenido2('form-receta.html')" >Pregunta 2 </button>
+    <button class="btnMenu" id="btn3">Pregunta 3 </button>
+    <button class="btnMenu" id="btn4" onclick="javascript:cargarContenido('temas.html')">Pregunta 4 </button>
+    
+    </div>
+    <div id="contenido">
+        <h2>Bienvenido</h2>
+        <p>Seleccione una opción del menú.</p>
+    </div>
+</div>
+
+<div id="mensaje">
+   Inicializando...
+</div>
+
+<div id="modal">
+    <div id="modal-contenido">
+        <h3 id="modal-titulo">Picante de Pollo</h3>
+        <div id="modal-tiporeceta">Postres </div>
+        <img src="images/tomate.jpeg" id="modal-imagen" >
+        <div id="modal-preparacion"></div>
+        <div>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+</div>
+<div id="modal-registro">
+</div>
+
+</body>
+</html>

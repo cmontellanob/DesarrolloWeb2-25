@@ -1,0 +1,12 @@
+<form id="formRegistro" onsubmit="return registrarReceta();">
+  <label for="nombre">Nombre:</label><br />
+  <input type="text" id="nombre" name="nombre" required /><br />
+  <label for="tipo">Tipo de Receta:</label><br />
+  <select name="idtiporeceta" id="idtiporeceta"></select>
+  <label for="imagen">URL de la Imagen:</label><br />
+  <input type="text" id="imagen" name="imagen" required /><br />
+  <label for="preparacion">Preparación:</label><br />
+  <textarea id="preparacion" name="preparacion" required></textarea><br /><br />
+  <input type="submit" value="Registrar" />
+  <button type="button" onclick="cerrarModalRegistro()">Cerrar</button>
+</form>
